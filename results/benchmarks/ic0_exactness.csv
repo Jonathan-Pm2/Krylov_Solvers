@@ -1,0 +1,7 @@
+family,label,dir,n,nnz_A,nnz_tril_A,nnz_L_ic0,fill_factor_zero,nnz_L_exact_chol,chol_structural_fill_ratio,factorization_residual,exact,observed_pcg_iters,shift,breakdown
+laplacian_1d_spd,1-D Laplacian n=500 (tridiagonal),laplacian_1d_spd/n00000500,500,1498,999,999,1,999,1,7.731729e-17,true,1,0.0,false
+varied_cond_spd,dense SPD kappa=1e6 n=200,varied_cond_spd/kappa6e0_n00000200,200,40000,20100,20100,1,20100,1,3.858877e-16,true,1,0.0,false
+varied_cond_spd,dense SPD kappa=1e4 n=500,varied_cond_spd/kappa4e0_n00000500,500,250000,125250,125250,1,125250,1,5.864998e-16,true,1,0.0,false
+laplacian_2d_spd,2-D Laplacian n=1024 (5-point),laplacian_2d_spd/m032_n00001024,1024,4992,3008,3008,1,32630,0.0921851,8.948618e-02,false,35,0.0,false
+laplacian_3d_spd,3-D Laplacian n=1728 (7-point),laplacian_3d_spd/m012_n00001728,1728,11232,6480,6480,1,231419,0.0280012,6.336476e-02,false,18,0.0,false
+anisotropic_2d_spd,anisotropic 2-D eps=0.1 n=576,anisotropic_2d_spd/eps0p1_n00000576,576,2784,1680,1680,1,13164,0.127621,3.300646e-02,false,24,0.0,false

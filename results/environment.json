@@ -1,0 +1,145 @@
+{
+  "captured_utc": "2026-07-27T16:39:58.911546+00:00",
+  "cpu": {
+    "cores_per_socket": 16,
+    "logical_cores": 24,
+    "machine": "x86_64",
+    "model_name": "13th Gen Intel(R) Core(TM) i7-13700",
+    "physical_sockets": 1,
+    "processor": "x86_64",
+    "threads_per_socket": 24
+  },
+  "git": {
+    "is_repo": false,
+    "reason": "not a git repository"
+  },
+  "julia": {
+    "available": true,
+    "blas": {
+      "loaded_libs": [
+        {
+          "interface": "ilp64",
+          "libname": "libopenblas64_.so"
+        }
+      ],
+      "num_threads": 12,
+      "summary": "LBTConfig([ILP64] libopenblas64_.so)"
+    },
+    "cpu_target": "alderlake",
+    "julia_base_image": "/home/jonathan/.julia/juliaup/julia-1.12.5+0.x64.linux.gnu/bin/julia",
+    "julia_threads": 1,
+    "julia_version": "1.12.5",
+    "machine": "x86_64-linux-gnu",
+    "packages": {
+      "BenchmarkTools": null,
+      "IncompleteLU": null,
+      "IterativeSolvers": null,
+      "JSON3": "1.14.3",
+      "Krylov": null,
+      "LinearAlgebra": "1.12.0",
+      "Preconditioners": null,
+      "SparseArrays": "1.12.0"
+    },
+    "word_size": 64
+  },
+  "os": {
+    "kernel": "7.0.0-28-generic",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "release": "7.0.0-28-generic",
+    "system": "Linux",
+    "version": "#28~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jul  1 15:50:57 UTC 2"
+  },
+  "protocol_section": "1.1",
+  "python": {
+    "numpy": {
+      "blas_name": "scipy-openblas",
+      "blas_version": "0.3.31.188.0",
+      "lapack_name": "scipy-openblas",
+      "lapack_version": "0.3.31.188.0",
+      "numpy_version": "2.4.4",
+      "show_config": {
+        "Build Dependencies": {
+          "blas": {
+            "detection method": "pkgconfig",
+            "found": true,
+            "include directory": "/opt/_internal/cpython-3.13.8/lib/python3.13/site-packages/scipy_openblas64/include",
+            "lib directory": "/opt/_internal/cpython-3.13.8/lib/python3.13/site-packages/scipy_openblas64/lib",
+            "name": "scipy-openblas",
+            "openblas configuration": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+            "pc file directory": "/project/.openblas",
+            "version": "0.3.31.188.0"
+          },
+          "lapack": {
+            "detection method": "pkgconfig",
+            "found": true,
+            "include directory": "/opt/_internal/cpython-3.13.8/lib/python3.13/site-packages/scipy_openblas64/include",
+            "lib directory": "/opt/_internal/cpython-3.13.8/lib/python3.13/site-packages/scipy_openblas64/lib",
+            "name": "scipy-openblas",
+            "openblas configuration": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+            "pc file directory": "/project/.openblas",
+            "version": "0.3.31.188.0"
+          }
+        },
+        "Compilers": {
+          "c": {
+            "commands": "cc",
+            "linker": "ld.bfd",
+            "name": "gcc",
+            "version": "14.2.1"
+          },
+          "c++": {
+            "commands": "c++",
+            "linker": "ld.bfd",
+            "name": "gcc",
+            "version": "14.2.1"
+          },
+          "cython": {
+            "commands": "cython",
+            "linker": "cython",
+            "name": "cython",
+            "version": "3.2.4"
+          }
+        },
+        "Machine Information": {
+          "build": {
+            "cpu": "x86_64",
+            "endian": "little",
+            "family": "x86_64",
+            "system": "linux"
+          },
+          "host": {
+            "cpu": "x86_64",
+            "endian": "little",
+            "family": "x86_64",
+            "system": "linux"
+          }
+        },
+        "Python Information": {
+          "path": "/tmp/build-env-f55_in1l/bin/python",
+          "version": "3.13"
+        },
+        "SIMD Extensions": {
+          "baseline": [
+            "X86_V2"
+          ],
+          "found": [
+            "X86_V3"
+          ],
+          "not found": [
+            "X86_V4",
+            "AVX512_ICL",
+            "AVX512_SPR"
+          ]
+        }
+      }
+    },
+    "python_executable": "/home/jonathan/miniconda3/bin/python3",
+    "python_implementation": "CPython",
+    "python_version": "3.13.12",
+    "scipy_version": "1.17.1",
+    "threadpoolctl": {
+      "available": false,
+      "reason": "threadpoolctl not installed; BLAS backend still captured via numpy.show_config"
+    }
+  }
+}

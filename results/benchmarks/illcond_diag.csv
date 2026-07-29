@@ -1,0 +1,12 @@
+quantity,value
+cond_B_true,1000000
+dgmres_iters,32
+dgmres_converged,1
+forward_error_rel,1.040665436
+ordinary_residual_rel,2.323304064
+index_a_residual_rel,8.255422504e-09
+backward_error_normwise,3.065783243e-05
+empirical_cond_ADb,192666.4397
+eps_rel_perturbation,1e-08
+expected_fwd_err_kappa_times_stopres,0.001590542862
+pinv_crosscheck_rel_err,0.9996921183

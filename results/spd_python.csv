@@ -1,0 +1,10 @@
+lang,n,kappa,solver,iters,converged,relres,time_s
+Python,1000,4.0610e+05,CG,1000,True,4.0382e-13,0.017007
+Python,1000,4.0610e+05,CG-Jacobi,1000,True,4.0382e-13,0.016941
+Python,1000,4.0610e+05,scipy.cg,1000,False,4.0382e-13,0.019001
+Python,2000,1.6228e+06,CG,2000,True,5.6921e-13,0.040437
+Python,2000,1.6228e+06,CG-Jacobi,2000,True,5.6921e-13,0.022534
+Python,2000,1.6228e+06,scipy.cg,2000,False,5.6921e-13,0.022913
+Python,5000,1.0136e+07,CG,5000,True,8.2538e-13,0.096988
+Python,5000,1.0136e+07,CG-Jacobi,5000,True,8.2538e-13,0.098615
+Python,5000,1.0136e+07,scipy.cg,5000,False,8.2538e-13,0.095227

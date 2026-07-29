@@ -1,0 +1,7 @@
+lang,n,index,restart,total_iters,cycles,converged,drazin_error,time_s
+Julia,10001,1,20,60,3,true,1.510099e-12,0.452010
+Julia,10002,2,20,60,3,true,8.739235e-10,0.273620
+Julia,25001,1,20,60,3,true,1.511818e-12,0.497578
+Julia,25002,2,20,60,3,true,8.751377e-10,0.516113
+Julia,50001,1,20,60,3,true,1.512942e-12,0.903203
+Julia,50002,2,20,60,3,true,8.756363e-10,1.065657

@@ -1,0 +1,818 @@
+{
+  "protocol_sections": [
+    "1.3",
+    "3.3",
+    "4",
+    "5",
+    "6",
+    "8.2"
+  ],
+  "seed": 20260727,
+  "reps": 10,
+  "warmup_discarded": 3,
+  "krylov_m": 120,
+  "tol": 1e-08,
+  "regimes": {
+    "single_thread": {
+      "requested_threads": 1
+    }
+  },
+  "languages": [
+    "julia",
+    "python"
+  ],
+  "usr_bin_time_v_available": true,
+  "usr_bin_time_v_note": null,
+  "python_thread_control_note": "threadpoolctl not installed; BLAS thread count is controlled only via OPENBLAS/OMP/MKL_NUM_THREADS env vars and observed from them",
+  "rhs_seeds": [
+    1000,
+    1001,
+    1002
+  ],
+  "baselines_bytes": {
+    "single_thread|julia": {
+      "ext_bytes": 465477632,
+      "inproc_bytes": 464347136
+    },
+    "single_thread|python": {
+      "ext_bytes": 48975872,
+      "inproc_bytes": 49725440
+    }
+  },
+  "work_order": [
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "cg",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "cg",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "cg",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "dgmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "cg",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "gmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "gmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "dgmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_ic0",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_ic0",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "cg",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "cg",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "dgmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "gmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "cg",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "cg",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "cg",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_ic0",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "gmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "cg",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "gmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "dgmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_ic0",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_ic0",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_ic0",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_ic0",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_ic0",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "cg",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "cg",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "cg",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_ic0",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_ic0",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_ic0",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_ic0",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "cg",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "gmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_ic0",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_ic0",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "cg",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "cg",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "dgmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_ic0",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "cg",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_ic0",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "dgmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "cg",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m096_n00009216",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "coupled_singular",
+      "instance_key": "coupled_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1002
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "similarity_singular",
+      "instance_key": "similarity_singular/ncore040_k3_n00000043",
+      "method": "dgmres",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "python",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_ic0",
+      "rhs_seed": 1001
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m032_n00001024",
+      "method": "pcg_jacobi",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "laplacian_2d_spd",
+      "instance_key": "laplacian_2d_spd/m064_n00004096",
+      "method": "pcg_ic0",
+      "rhs_seed": 1000
+    },
+    {
+      "regime": "single_thread",
+      "language": "julia",
+      "family": "blockdiag_high_index_singular",
+      "instance_key": "blockdiag_high_index_singular/ncore040_k5_n00000045",
+      "method": "gmres",
+      "rhs_seed": 1002
+    }
+  ],
+  "schema_columns": [
+    "schema_version",
+    "language",
+    "regime",
+    "requested_threads",
+    "observed_task_threads",
+    "observed_blas_threads",
+    "blas_backend",
+    "omp_num_threads",
+    "openblas_num_threads",
+    "mkl_num_threads",
+    "seed",
+    "family",
+    "instance_key",
+    "n",
+    "nnz",
+    "method",
+    "rep",
+    "warmup_discarded",
+    "t_assembly_ns",
+    "t_precond_ns",
+    "t_solve_ns",
+    "t_total_ns",
+    "matvecs",
+    "precond_applications",
+    "orthogonalizations",
+    "restart_cycles",
+    "iterations",
+    "converged",
+    "stop_residual",
+    "relres",
+    "drazin_error",
+    "time_per_matvec_ns",
+    "ns_per_nonzero",
+    "peak_rss_bytes",
+    "peak_rss_method",
+    "peak_rss_inproc_bytes",
+    "baseline_rss_bytes",
+    "runtime_live_bytes",
+    "peak_bytes_per_nonzero",
+    "index_a",
+    "krylov_m",
+    "tol",
+    "precond_kind",
+    "precond_fill_factor",
+    "precond_shift",
+    "precond_breakdown",
+    "timestamp_utc"
+  ],
+  "elapsed_seconds": 301.38,
+  "csv_files": {
+    "spd": "results/benchmarks/bench_spd.csv",
+    "drazin": "results/benchmarks/bench_drazin.csv"
+  }
+}

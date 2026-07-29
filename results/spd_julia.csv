@@ -1,0 +1,7 @@
+lang,n,kappa,solver,iters,converged,relres,time_s
+Julia,1000,4.0610e+05,CG,1000,true,3.8382e-13,0.005326
+Julia,1000,4.0610e+05,CG-Jacobi,1000,true,3.7818e-13,0.060890
+Julia,2000,1.6228e+06,CG,2000,true,5.5721e-13,0.016517
+Julia,2000,1.6228e+06,CG-Jacobi,2000,true,5.6619e-13,0.301315
+Julia,5000,1.0136e+07,CG,5000,true,8.4052e-13,0.170475
+Julia,5000,1.0136e+07,CG-Jacobi,5000,true,8.4054e-13,1.975126

@@ -1,0 +1,33 @@
+quantity,value
+matrix,"HB/bcsstk14"
+n,"1806"
+nnz,"63454"
+ordering,"natural (rows factored 1..n, no fill-reducing permutation)"
+scaling,"none (raw matrix values)"
+pcg_tolerance,"1e-8 (relative residual)"
+diag_abs_min,"1.000000e+00"
+diag_abs_max,"8.935001e+09"
+A_frobenius_norm,"6.469557e+10"
+A_1norm,"1.310041e+10"
+manteuffel_increment_rule,"fixed ABSOLUTE additive schedule alpha*I (not scaled to ||A|| or diag)"
+manteuffel_schedule,"0.001;0.01;0.05;0.1;0.5;1.0;5.0;10.0"
+bad_pivot_row_shift0_1based,595
+schedule_shift_0.001_ok,false
+schedule_shift_0.001_bad_pivot_1based,595
+schedule_shift_0.01_ok,false
+schedule_shift_0.01_bad_pivot_1based,595
+schedule_shift_0.05_ok,false
+schedule_shift_0.05_bad_pivot_1based,595
+schedule_shift_0.1_ok,false
+schedule_shift_0.1_bad_pivot_1based,595
+schedule_shift_0.5_ok,false
+schedule_shift_0.5_bad_pivot_1based,595
+schedule_shift_1.0_ok,false
+schedule_shift_1.0_bad_pivot_1based,595
+schedule_shift_5.0_ok,false
+schedule_shift_5.0_bad_pivot_1based,595
+schedule_shift_10.0_ok,false
+schedule_shift_10.0_bad_pivot_1based,595
+smallest_successful_shift,1e+06
+successful_shift_over_diag_max,0.000111919
+successful_shift_over_Afro,1.5457e-05

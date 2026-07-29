@@ -1,0 +1,94 @@
+{
+  "timing": {
+    "n_raw_rows": 30560,
+    "n_units": 1020,
+    "regimes": [
+      "multi_thread",
+      "single_thread"
+    ],
+    "phases": [
+      "drazin",
+      "spd"
+    ],
+    "methods": [
+      "cg",
+      "dgmres",
+      "gmres",
+      "pcg_ic0",
+      "pcg_jacobi"
+    ]
+  },
+  "convergence": {
+    "n_raw_rows": 3356,
+    "n_units": 198,
+    "max_rhs_per_unit": 20
+  },
+  "n_fits": 208,
+  "scaling": {
+    "grouping": "per (family, method, language, phase, regime)",
+    "fit_status_counts": {
+      "insufficient_ladder": 152,
+      "ok": 48,
+      "pooled": 8
+    },
+    "valid_ladder_families": [
+      "anisotropic_2d_spd/eps0p1",
+      "laplacian_2d_spd",
+      "laplacian_3d_spd",
+      "varied_cond_spd/kappa4e0"
+    ],
+    "pooled_singular_fits": [
+      "drazin/pooled_singular/dgmres/julia/multi_thread",
+      "drazin/pooled_singular/dgmres/julia/single_thread",
+      "drazin/pooled_singular/dgmres/python/multi_thread",
+      "drazin/pooled_singular/dgmres/python/single_thread",
+      "drazin/pooled_singular/gmres/julia/multi_thread",
+      "drazin/pooled_singular/gmres/julia/single_thread",
+      "drazin/pooled_singular/gmres/python/multi_thread",
+      "drazin/pooled_singular/gmres/python/single_thread"
+    ]
+  },
+  "work_count_warnings": [],
+  "timing_nan_leaks": [],
+  "work_identity_check": {
+    "n_shared_units": 510,
+    "max_abs_diff": {
+      "matvecs": 3,
+      "orthogonalizations": 74,
+      "precond_applications": 3
+    }
+  },
+  "drazin_error_contrast": {
+    "n00000103": {
+      "dgmres": 3.8247286356915994e-07,
+      "gmres": 0.1583168373927375
+    },
+    "n00000503": {
+      "dgmres": 6.097394483505919e-07,
+      "gmres": 20917179.905480623
+    },
+    "ncore040_k2_n00000042": {
+      "dgmres": 1.0406910008617927,
+      "gmres": 0.22408168760898756
+    },
+    "ncore040_k3_n00000043": {
+      "dgmres": 1.090983277946839e-14,
+      "gmres": 0.6650674336618225
+    },
+    "ncore040_k4_n00000044": {
+      "dgmres": 3.3939732368565385e-14,
+      "gmres": 0.36405939401725074
+    },
+    "ncore040_k5_n00000045": {
+      "dgmres": 3.3560425819591345e-14,
+      "gmres": 0.7774618698504996
+    },
+    "ncore997_k3_n00001000": {
+      "dgmres": 1.0558260754973108,
+      "gmres": 1.0032746754781812
+    }
+  },
+  "ic0_breakdown_instances": [
+    "suitesparse_spd/HB_bcsstk14_n00001806"
+  ]
+}

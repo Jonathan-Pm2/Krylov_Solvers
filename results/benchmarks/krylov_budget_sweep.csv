@@ -1,0 +1,6 @@
+instance,dir,n,k,krylov_m_requested,krylov_m_used,iterations,converged,index_a_residual,drazin_error,solve_time_s,seed
+similarity n=1000 k=3 (dense),similarity_singular/ncore997_k3_n00001000,1000,3,120,120,120,false,0.70278613,1.0558261,9.06687,1000
+similarity n=1000 k=3 (dense),similarity_singular/ncore997_k3_n00001000,1000,3,200,200,200,false,0.56183891,1.0916211,24.9863,1000
+similarity n=1000 k=3 (dense),similarity_singular/ncore997_k3_n00001000,1000,3,400,400,400,false,0.29601061,1.13906,93.9011,1000
+similarity n=1000 k=3 (dense),similarity_singular/ncore997_k3_n00001000,1000,3,800,800,800,false,0.057810938,0.91631396,369.986,1000
+similarity n=1000 k=3 (dense),similarity_singular/ncore997_k3_n00001000,1000,3,999,999,997,true,5.3723102e-15,5.3631815e-14,559.815,1000

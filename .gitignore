@@ -1,0 +1,23 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+# Python
+__pycache__/
+*.pyc
+# scratch / backups
+*.pre_*_bak
+
+# Large regenerable problem instances (deterministic; see README + manifest checksums)
+data/
+
+# Manuscript LaTeX + all rendered article artifacts (they belong in the article, not the repo)
+*.tex
+*.pdf
+*.png
